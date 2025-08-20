@@ -1,0 +1,26 @@
+
+.JUAN{
+    color: violet;
+    background-color: aquamarine;
+}
+#JUANPENSATIVO{
+    color: blueviolet;
+    background-color: rgb(191, 191, 240);
+}
+#LADO1{
+    width: 25vw;
+    height: 40vh;
+    border: 1px solid lightblue;
+    margin: 10px;
+}
+#LADO2{
+    width: 25vw;
+    height: 40vh;
+    border: 1px solid blueviolet; 
+    margin: 10px;
+}
+.cuadrado{
+    width: 25%;
+    height: 25%;
+    border: 1px solid blanchedalmond;
+}
