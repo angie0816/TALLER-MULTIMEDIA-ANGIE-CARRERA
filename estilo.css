@@ -68,3 +68,133 @@
     top: 75%;
     left: 75%;
 }
+/* Estilo dibujo*/
+#tituloDibujo {
+text-align: center;
+}
+
+#lienzo {
+width: 700px;
+height: 680px;
+background-image: url("https://static.wikia.nocookie.net/memes-pedia/images/a/a3/FB_IMG_1596591789564.jpg/revision/latest/thumbnail/width/360/height/360?cb=20200911174317&path-prefix=es");
+background-repeat: no-repeat;
+background-size: cover;
+border: 1px solid black;
+margin: 0 auto;
+position: relative;
+}
+
+.cabeza {
+    width: 80px; /* ancho */
+    height: 80px; /* alto */
+    background-color: rgb(35, 24, 4); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 3px solid rgb(35, 24, 4); /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    top: 85px; /* posición desde el borde superior del lienzo */
+    left: 550px; /* posición desde el borde izquierdo del lienzo */
+}
+
+.cuadrado {
+   width: 20px;
+   height: -80px;
+   border-style: solid;
+   border-width: 0 25px 214px 25px;
+   border-color: transparent transparent rgb(35, 24, 4); transparent;
+   transform: rotate(183deg);
+   position: absolute;
+   top: 200px;
+   left: 426px;
+}
+ .triangulo {
+   width: 25px;
+   height: 0px;
+   border-style: solid;
+   border-width: 0 34.5px 150px 34.5px;
+   border-color: transparent transparent rgb(35, 24, 4); transparent;
+   transform: rotate(140deg);
+   position: absolute;
+   top: 95px;
+   left: 580px;
+}
+.oreja{
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 0 9px 36px 7px;
+   border-color: transparent transparent rgb(35, 24, 4); transparent;
+   transform: rotate(10deg);
+   position: absolute;
+   top: 55px;
+   left: 604px;
+}
+.cuello{
+   width: 30px;
+   height: 0px;
+   border-style: solid;
+   border-width: 0 53.5px 191px 53.5px;
+   border-color: transparent transparent rgb(35, 24, 4); transparent;
+   transform: rotate(59deg);
+   position: absolute;
+   top: 60px;
+   left: 455px;
+}
+.rectangulo{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(251, 230, 0);
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+.boca{
+    width: 26px; /* ancho */
+    height: 26px; /* alto */
+    background-color: rgb(35, 24, 4); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 3px solid rgb(35, 24, 4); /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    top: 205px; /* posición desde el borde superior del lienzo */
+    left: 655px; /* posición desde el borde izquierdo del lienzo */
+}
+.pecho{
+    width: 80px; /* ancho */
+    height: 110px; /* alto */
+    background-color: rgb(35, 24, 4); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 3px solid rgb(35, 24, 4); /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    transform: rotate(50deg);
+    top: 185px; /* posición desde el borde superior del lienzo */
+    left: 425px; /* posición desde el borde izquierdo del lienzo */ 
+}
+.panza{
+    width: 150px; /* ancho */
+    height: 50px; /* alto */
+    background-color: rgb(35, 24, 4); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 3px solid rgb(35, 24, 4); /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    transform: rotate(70);
+    top: 230px; /* posición desde el borde superior del lienzo */
+    left: 300px; /* posición desde el borde izquierdo del lienzo */ 
+}
+/* línea hecha con border*/
+.lineaHorizontal {
+    width: 100px;
+    height: 0px;
+    border: 3px solid rgb(255, 0, 0); /* borde de la figura: grosor, estilo, color */
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
+
+/* línea hecha con border*/
+.lineaVertical {
+    width: 0px;
+    height: 100px;
+    border: 3px solid rgb(0, 140, 255); /* borde de la figura: grosor, estilo, color */
+    position: absolute;
+    top: 10px;
+    left: 390px;
+}
