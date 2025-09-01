@@ -1,4 +1,18 @@
 
+.titulo{
+  font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+.titulo:hover{
+    font-weight: 800;
+    color: violet;
+    cursor: pointer;
+}
+#cabeza:hover{
+    color: violet;
+    cursor: pointer;
+}
 .JUAN{
     color: violet;
     background-color: aquamarine;
@@ -25,7 +39,7 @@
     justify-content: space-around;
     align-items: center;
 }
-.cuadrado{
+.cuadradoh{
     width: 25%;
     height: 25%;
     border: 5px solid blanchedalmond;
@@ -84,7 +98,7 @@ margin: 0 auto;
 position: relative;
 }
 
-.cabeza {
+#cabeza {
     width: 80px; /* ancho */
     height: 80px; /* alto */
     background-color: rgb(35, 24, 4); /* color de fondo */
@@ -95,7 +109,7 @@ position: relative;
     left: 550px; /* posición desde el borde izquierdo del lienzo */
 }
 
-.cuadrado {
+#cuadrado {
    width: 20px;
    height: -80px;
    border-style: solid;
@@ -106,7 +120,7 @@ position: relative;
    top: 200px;
    left: 426px;
 }
- .triangulo {
+#triangulo {
    width: 25px;
    height: 0px;
    border-style: solid;
@@ -117,7 +131,7 @@ position: relative;
    top: 95px;
    left: 580px;
 }
-.oreja{
+#oreja{
    width: 0px;
    height: 0px;
    border-style: solid;
@@ -128,7 +142,7 @@ position: relative;
    top: 55px;
    left: 604px;
 }
-.cuello{
+#cuello{
    width: 30px;
    height: 0px;
    border-style: solid;
@@ -139,7 +153,7 @@ position: relative;
    top: 60px;
    left: 455px;
 }
-.rectangulo{
+#rectangulo{
     width: 100px;
     height: 100px;
     background-color: rgb(251, 230, 0);
@@ -147,7 +161,7 @@ position: relative;
     top: 20px;
     left: 120px;
 }
-.boca{
+#boca{
     width: 26px; /* ancho */
     height: 26px; /* alto */
     background-color: rgb(35, 24, 4); /* color de fondo */
@@ -157,7 +171,7 @@ position: relative;
     top: 205px; /* posición desde el borde superior del lienzo */
     left: 655px; /* posición desde el borde izquierdo del lienzo */
 }
-.pecho{
+#pecho{
     width: 80px; /* ancho */
     height: 110px; /* alto */
     background-color: rgb(35, 24, 4); /* color de fondo */
@@ -168,7 +182,7 @@ position: relative;
     top: 185px; /* posición desde el borde superior del lienzo */
     left: 425px; /* posición desde el borde izquierdo del lienzo */ 
 }
-.panza{
+#panza{
     width: 150px; /* ancho */
     height: 50px; /* alto */
     background-color: rgb(35, 24, 4); /* color de fondo */
