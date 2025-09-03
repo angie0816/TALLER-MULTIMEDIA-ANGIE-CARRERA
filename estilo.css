@@ -9,10 +9,6 @@
     color: violet;
     cursor: pointer;
 }
-#cabeza:hover{
-    color: violet;
-    cursor: pointer;
-}
 .JUAN{
     color: violet;
     background-color: aquamarine;
@@ -39,11 +35,30 @@
     justify-content: space-around;
     align-items: center;
 }
+@keyframes redondear {
+	0% {
+		border-radius: 0%;
+        background-color: blanchedalmond;
+	}
+	50% {
+		border-radius: 25%;
+        background-color: blueviolet;
+	}
+	100% {
+		border-radius: 50%;
+        background-color: violet;
+	}
+}
 .cuadradoh{
     width: 25%;
     height: 25%;
     border: 5px solid blanchedalmond;
     position: absolute;
+}
+.cuadradoh:hover{
+    animation-name: redondear;
+    animation-duration: 2s;
+    animation: redondear 2s linear infinite alternate;
 }
 .cuadradop{
     width: 25%;
@@ -90,7 +105,7 @@ text-align: center;
 #lienzo {
 width: 700px;
 height: 680px;
-background-image: url("https://static.wikia.nocookie.net/memes-pedia/images/a/a3/FB_IMG_1596591789564.jpg/revision/latest/thumbnail/width/360/height/360?cb=20200911174317&path-prefix=es");
+background-color: rgb(119, 119, 95);
 background-repeat: no-repeat;
 background-size: cover;
 border: 1px solid black;
@@ -98,7 +113,7 @@ margin: 0 auto;
 position: relative;
 }
 
-#cabeza {
+.cabeza {
     width: 80px; /* ancho */
     height: 80px; /* alto */
     background-color: rgb(35, 24, 4); /* color de fondo */
@@ -108,8 +123,13 @@ position: relative;
     top: 85px; /* posición desde el borde superior del lienzo */
     left: 550px; /* posición desde el borde izquierdo del lienzo */
 }
-
-#cuadrado {
+.cabeza:hover {
+    width: 80px; /* ancho */
+    height: 80px;
+    background-color: violet;
+    cursor: pointer;
+}
+.cuadrado {
    width: 20px;
    height: -80px;
    border-style: solid;
@@ -120,7 +140,11 @@ position: relative;
    top: 200px;
    left: 426px;
 }
-#triangulo {
+.cuadrado:hover{
+    color: violet;
+    cursor: pointer;
+}
+.triangulo {
    width: 25px;
    height: 0px;
    border-style: solid;
@@ -131,7 +155,7 @@ position: relative;
    top: 95px;
    left: 580px;
 }
-#oreja{
+.oreja{
    width: 0px;
    height: 0px;
    border-style: solid;
@@ -142,7 +166,7 @@ position: relative;
    top: 55px;
    left: 604px;
 }
-#cuello{
+.cuello{
    width: 30px;
    height: 0px;
    border-style: solid;
@@ -153,7 +177,7 @@ position: relative;
    top: 60px;
    left: 455px;
 }
-#rectangulo{
+.rectangulo{
     width: 100px;
     height: 100px;
     background-color: rgb(251, 230, 0);
@@ -161,7 +185,7 @@ position: relative;
     top: 20px;
     left: 120px;
 }
-#boca{
+.boca{
     width: 26px; /* ancho */
     height: 26px; /* alto */
     background-color: rgb(35, 24, 4); /* color de fondo */
@@ -171,7 +195,7 @@ position: relative;
     top: 205px; /* posición desde el borde superior del lienzo */
     left: 655px; /* posición desde el borde izquierdo del lienzo */
 }
-#pecho{
+.pecho{
     width: 80px; /* ancho */
     height: 110px; /* alto */
     background-color: rgb(35, 24, 4); /* color de fondo */
@@ -182,7 +206,7 @@ position: relative;
     top: 185px; /* posición desde el borde superior del lienzo */
     left: 425px; /* posición desde el borde izquierdo del lienzo */ 
 }
-#panza{
+.panza{
     width: 150px; /* ancho */
     height: 50px; /* alto */
     background-color: rgb(35, 24, 4); /* color de fondo */
@@ -194,15 +218,66 @@ position: relative;
     left: 300px; /* posición desde el borde izquierdo del lienzo */ 
 }
 /* línea hecha con border*/
-.lineaHorizontal {
-    width: 100px;
-    height: 0px;
-    border: 3px solid rgb(255, 0, 0); /* borde de la figura: grosor, estilo, color */
+.tronco {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(35, 24, 4);
+    border: 1px solid rgb(35, 24, 4);
     position: absolute;
-    top: 50px;
-    left: 500px;
+    top: 146px;
+    left: 300px;
 }
-
+.cola{
+    width: 150px; /* ancho */
+    height: 150px; /* alto */
+    background-color: rgb(35, 24, 4); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 3px solid rgb(35, 24, 4); /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    transform: rotate(70);
+    top: 138px; /* posición desde el borde superior del lienzo */
+    left: 200px; /* posición desde el borde izquierdo del lienzo */ 
+}
+.pata1 {
+   width: 20px;
+   height: -80px;
+   border-style: solid;
+   border-width: 0 25px 214px 25px;
+   border-color: transparent transparent rgb(35, 24, 4); transparent;
+   transform: rotate(172deg);
+   position: absolute;
+   top: 190px;
+   left: 220px;
+}
+.pata2 {
+   width: 20px;
+   height: -80px;
+   border-style: solid;
+   border-width: 0 25px 214px 25px;
+   border-color: transparent transparent rgb(35, 24, 4); transparent;
+   transform: rotate(183deg);
+   position: absolute;
+   top: 190px;
+   left: 210px;
+}
+.cola2 {
+   width: 1px;
+   height: 90px;
+   border-style: solid;
+   border-width: 0 25px 214px 25px;
+   border-color: transparent transparent rgb(35, 24, 4); transparent;
+   transform: rotate(183deg);
+   position: absolute;
+   top: 190px;
+   left: 170px;
+}
+.pedro{
+    position: absolute;
+    color: aliceblue;
+    font-size: 200px;
+    top: 300px;
+    left: 150px;
+}
 /* línea hecha con border*/
 .lineaVertical {
     width: 0px;
